@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-bool Needsmaintenance(int hojas, int intervalo) {
+bool NeedsMaintenance(int hojas, int intervalo) {
     if (hojas % intervalo == 0) {
         return true;
     } else {
@@ -16,7 +16,7 @@ int main() {
     cout << "Ingrese el intervalo de mantenimiento: ";
     cin >> intervalo;
 
-    if (Needsmaintenance(hojas, intervalo)) {
+    if (NeedsMaintenance(hojas, intervalo)) {
         cout << "La maquina requiere mantenimiento." << endl;
     } else {
         cout << "La maquina no requiere mantenimiento." << endl;
