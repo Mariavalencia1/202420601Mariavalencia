@@ -9,6 +9,8 @@ bool NeedsMaintenance(int hojas, int intervalo) {
     }
 }
 
+
+
 int main() {
     int hojas, intervalo;
     cout << "Ingrese la cantidad de hojas producidas: ";

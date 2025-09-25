@@ -3,7 +3,7 @@ using namespace std;
 
 void mostrarTabla(int number) {
     cout << "Tabla de multiplicar del " << number << ":" << endl;
-    for (int i = 1; i <= 10; i++) {
+    for (int i = 2; i <= 10; i++) {
         cout << number << " x " << i << " = " << (number * i) << endl;
     }
 }

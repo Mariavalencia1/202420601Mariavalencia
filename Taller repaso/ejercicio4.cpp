@@ -14,7 +14,7 @@ void contarDescendente(int number) {
 
 void contarAscendente(int number) {
     cout << "Conteo ascendente hasta " << number << ": ";
-    int i = 0;
+    int i = 2;
     while (i <= number) {
         cout << i << " ";
         i++; 

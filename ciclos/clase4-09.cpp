@@ -36,3 +36,48 @@ int main() {
 
     return 0;
 }
+#include <iostream>
+using namespace std;
+
+// Función que compara si la respuesta es correcta
+bool isCorrect(char userAnswer, char correctAnswer) {
+    return userAnswer == correctAnswer;
+}
+
+// Función que retorna 10 si es correcta, 0 si es incorrecta
+int questionScore(bool correct) {
+    if (correct) {
+        return 10;
+    } else {
+        return 0;
+    }
+}
+
+// Función principal del quiz
+void playQuiz() {
+    char answer;
+    int score = 0;
+
+    // Pregunta 1
+    cout << "Pregunta 1 (a/b/c): ";
+    cin >> answer;
+    score += questionScore(isCorrect(answer, 'a'));
+
+    // Pregunta 2
+    cout << "Pregunta 2 (a/b/c): ";
+    cin >> answer;
+    score += questionScore(isCorrect(answer, 'a'));
+
+    // Pregunta 3
+    cout << "Pregunta 3 (a/b/c): ";
+    cin >> answer;
+    score += questionScore(isCorrect(answer, 'a'));
+
+    // Mostrar puntaje final
+    cout << "\nPuntaje final: " << score << endl;
+}
+
+int main() {
+    playQuiz();
+    return 0;
+}
