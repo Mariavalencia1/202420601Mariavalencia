@@ -1,16 +1,16 @@
 #include <iostream>
 using namespace std;
 
-
 void contarDescendente(int number) {
-    cout << "Conteo descendente desde " << number << ": ";
+    cout << "Conteo descendente de pares desde " << number << ": ";
     while (number >= 0) {
-        cout << number << " ";
+        if (number % 2 == 0) {   
+            cout << number << " ";
+        }
         number--; 
     }
     cout << endl;
 }
-
 
 void contarAscendente(int number) {
     cout << "Conteo ascendente hasta " << number << ": ";
