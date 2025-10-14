@@ -8,7 +8,7 @@ int main() {
     string resultado = "";
     for (int i = 0; i < palabra.length(); i++) {
         char letra = palabra[i];
-
+            //use toupper para pasar a letras mayusculas y tolower para pasar a miusculas 
         if (i % 2 == 0) {
             resultado += toupper(letra);
         } 
