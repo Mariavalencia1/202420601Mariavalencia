@@ -31,7 +31,7 @@ void ForWithString() {
         {
             cout << "Se encontro una u" << endl;
         }
-        //cout << "position: " << i << " - " << textCharacter << endl;
+        
     }
 }
 

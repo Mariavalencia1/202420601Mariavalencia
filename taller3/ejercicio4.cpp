@@ -18,13 +18,13 @@ int main() {
             break; 
         }
 
-        if (palabra.length() > numero) {
+        if (palabra.size() > numero) {
             contador++;
         }
     }
 
 
-    cout << "Cantidad de palabras con longitud mayor a " << numero << ": " << contador << endl;
+    cout << "Cantidad de palabras con longitud mayor a " << numero << ":" << contador << endl;
 
     return 0;
 }
