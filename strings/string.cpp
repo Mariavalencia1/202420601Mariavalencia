@@ -4,13 +4,13 @@ using namespace std;
 
 void ForWithString() {
     cout << "------------" << endl;
-    string exampleText = "hello word";
-    cout  << "size():" << exampleText.size() << endl;
-    cout << "posicion 1: " << exampleText[1]<< endl;
+    string Palabra1;
+    cout  << "size():" << Palabra1.size() << endl;
+    cout << "posicion 1: " << Palabra1 [1]<< endl;
     cout << "-------------" << endl;
-    for (int i = 0; i< exampleText.size()+1; i++)
+    for (int i = 0; i< Palabra1.size()+1; i++)
     {
-        char textCharacter = exampleText[i];
+        char textCharacter = Palabra1[i];
         if (textCharacter == 'a')
         {
             cout << "Se encontro una a" << endl;
@@ -37,6 +37,12 @@ void ForWithString() {
 
 
 int main() {
+
+    string palabra1;
+    cout << "Ingresa una pabalra";
+    cin >> palabra1;
+
+
     ForWithString();
     return 0;
 }
