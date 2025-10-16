@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
 
-
 bool esPalindromo(string palabra) {
     int inicio = 0;
     int fin = palabra.length() - 1;
