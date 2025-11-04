@@ -15,18 +15,14 @@ int main()
 
     for (int i = 0; i < cantidad; i++) 
     {
-        cout << "Precio #" << i + 1 << ": $" << precios[i] << endl;
-
-       
+        cout << "hay " << i + 1 << " productos : " << precios[i] << endl;
         suma += precios[i];
-
       
         if (precios[i] > mayor) 
         {
             mayor = precios[i];
         }
 
-     
         if (precios[i] < menor) 
         {
             menor = precios[i];
