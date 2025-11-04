@@ -16,7 +16,6 @@ int main()
         cout << "edad numero" << i + 1 << ": " << edades[i] << endl;
         suma += edades[i];
     }
-
     promedio = suma / cantidad;
 
     cout << "La suma de las edades es: " << suma << endl;
