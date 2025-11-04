@@ -4,8 +4,8 @@ using namespace std;
 int main() 
 {
 
-    int edades[6] = {18, 40, 70, 30, 27, 2};
-    int cantidad = 6;
+    int edades[7] = {18, 40, 70, 30, 27, 2, 8};
+    int cantidad = 7;
     int suma = 0;
     float promedio = 0;
 
