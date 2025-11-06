@@ -19,9 +19,7 @@ int main()
                 vocales++;
             else
                 consonantes++;
-        }
-    }
-
+            
     
     cout << "Texto original: " << texto << endl;
     cout << "Cantidad de vocales: " << vocales << endl;
