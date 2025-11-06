@@ -1,34 +1,39 @@
 #include <iostream>
-#include <string>
 using namespace std;
 
-int main() {
-    string placas[6] = {"ABC123", "XYZ789", "LMN456", "JKL321", "QWE654", "TYU999"};
-    float multas[6] = {250000, 180000, 300000, 450000, 200000, 120000};
-    string ciudades[6] = {"Tunja", "Bogotá", "Tunja", "Medellín", "Cali", "Tunja"};
-    
-    string ciudadBuscada;
-    cout << "Ingrese la ciudad a consultar: ";
-    getline(cin, ciudadBuscada);
-    
-    float total = 0;
-    bool hayMultas = false;
+int main() 
+{
+    string ciudades[10] = {"Bogotá", "Medellín", "Cali", "Cartagena", "Pereira", "Bucaramanga",
+                           "Manizales", "Tunja", "Santa Marta", "Villavicencio"};
+    float temperaturas[10] = {18.5, 25.1, 27.8, 31.3, 22.7, 26.2, 19.0, 16.4, 30.5, 29.0};
 
-    cout << "\n=== Multas registradas en " << ciudadBuscada << " ===" << endl;
+    float tempMin, tempMax;
+    cout << "Ingrese la temperatura minima: ";
+    cin >> tempMin;
+    cout << "Ingrese la temperatura maxima: ";
+    cin >> tempMax;
 
-    for (int i = 0; i < 6; i++) {
-        if (ciudades[i] == ciudadBuscada) {
-            cout << placas[i] << "  -  $" << multas[i] << endl;
-            total += multas[i];
-            hayMultas = true;
+    cout << "Ciudades dentro del rango (" << tempMin << " - " << tempMax << " grados ):";
+
+    float suma = 0;
+    int contador = 0;
+
+    for (int i = 0; i < 10; i++) 
+    {
+        if (temperaturas[i] >= tempMin && temperaturas[i] <= tempMax) 
+        {
+            cout << ciudades[i] << " - " << temperaturas[i] << " °C" << endl;
+            suma += temperaturas[i];
+            contador++;
         }
     }
 
-    if (hayMultas) {
-        cout << "-----------------------------" << endl;
-        cout << "Total de multas en " << ciudadBuscada << ": $" << total << endl;
+    if (contador > 0) 
+    {
+        float promedio = suma / contador;
+        cout << "Promedio de temperaturas dentro del rango: " << promedio << " grados " << endl;
     } else {
-        cout << "No se encontraron multas en esa ciudad." << endl;
+        cout << "No hay ciudades dentro de ese rango de temperatura." << endl;
     }
 
     return 0;
